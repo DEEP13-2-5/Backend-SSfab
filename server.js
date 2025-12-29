@@ -15,7 +15,7 @@ app.use(express.json())
 app.use(cors({
   origin: [
     'http://localhost:5173',
-    'https://kamdaengineering.netlify.app'
+    'https://benevolent-heliotrope-4e7fed.netlify.app'
   ],
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type'],
