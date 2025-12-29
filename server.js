@@ -57,9 +57,15 @@ const User = mongoose.model('User', userSchema)
 app.post('/api/auth/signup', async (req, res) => {
   const { fullName, company, email, password, confirmPassword } = req.body
 
-  if (!fullName || !email || !password || !confirmPassword) {
-    return res.status(400).json({ message: 'Missing required fields' })
-  }
+ if (
+  !fullName.trim() ||
+  !email.trim() ||
+  !password ||
+  !confirmPassword
+) {
+  return res.status(400).json({ message: 'Missing required fields' })
+}
+
 
   if (password !== confirmPassword) {
     return res.status(400).json({ message: 'Passwords do not match' })
