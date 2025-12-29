@@ -1,0 +1,39 @@
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+debug.log
+
+# Build / runtime
+dist/
+build/
+out/
+.cache/
+coverage/
+.nyc_output/
+
+# OS files
+.DS_Store
+
+# IDEs / editors
+.vscode/
+.idea/
+
+# Misc
+*.tgz
+*.pid
+*.seed
+.sass-cache/
+.parcel-cache/
+.serverless/
